@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Calculator, FileFunction, SquareDot } from "lucide-react";
+import { Calculator, File } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -40,15 +40,15 @@ const Footer = () => {
           <div className="space-y-6">
             <nav className="flex flex-wrap justify-center gap-x-6 gap-y-3">
               <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
-                <FileFunction className="h-3 w-3 mr-1" />
+                <File className="h-3 w-3 mr-1" />
                 Home
               </Link>
               <Link to="#experience" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
-                <SquareDot className="h-3 w-3 mr-1" />
+                <File className="h-3 w-3 mr-1" />
                 Experience
               </Link>
               <Link to="#projects" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
-                <FileFunction className="h-3 w-3 mr-1" />
+                <File className="h-3 w-3 mr-1" />
                 Projects
               </Link>
               <Link to="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">

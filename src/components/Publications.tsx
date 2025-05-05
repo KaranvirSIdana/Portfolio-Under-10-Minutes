@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { SquareDot, FileFunction, Microscope } from "lucide-react";
+import { File, Microscope } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
 const Publications = () => {
@@ -12,14 +12,14 @@ const Publications = () => {
       title: "Dual-LLM Call Evaluation Framework",
       description: "A novel approach using multiple language models to evaluate customer service calls with high accuracy and reduced false positives.",
       journal: "AI in Business Operations, 2023",
-      icon: <SquareDot className="h-8 w-8" />,
+      icon: <File className="h-8 w-8" />,
       color: "from-blue-500/20 to-indigo-500/20"
     },
     {
       title: "Feature Adoption Analysis Using AI Mentors",
       description: "Tracking and analyzing over 100,000 user interactions monthly to optimize AI-driven learning experiences.",
       journal: "Educational Technology Innovations, 2024",
-      icon: <FileFunction className="h-8 w-8" />,
+      icon: <File className="h-8 w-8" />,
       color: "from-emerald-500/20 to-teal-500/20"
     },
     {

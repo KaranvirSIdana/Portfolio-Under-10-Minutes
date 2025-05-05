@@ -1,5 +1,4 @@
-
-import { ArrowDown, Calculator, FileFunction } from "lucide-react";
+import { ArrowDown, Calculator, File } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
@@ -75,7 +74,7 @@ const Hero = () => {
             <div className="text-lg md:text-xl leading-relaxed text-center md:text-left">
               Transforming complex data into <span className="font-semibold text-foreground">actionable insights</span> with 
               <span className="inline-flex items-center mx-1 text-primary">
-                <FileFunction className="h-4 w-4 mr-1" /> 
+                <File className="h-4 w-4 mr-1" /> 
                 mathematical precision
               </span>
               and
