@@ -28,44 +28,60 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
-      <div className="container max-w-5xl mx-auto px-4">
+    <section id="contact" className="py-20 bg-muted/30 relative">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container max-w-5xl mx-auto px-4 relative z-10">
         <h2 className="text-3xl font-bold mb-12">Get In Touch</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
+          <div className="bg-card/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-semibold mb-6 flex items-center">
+              <Mail className="h-5 w-5 text-primary mr-2" />
+              Contact Information
+            </h3>
             <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary" />
-                <a href="mailto:karanvir@example.com" className="hover:underline">
+              <div className="flex items-center gap-3 group">
+                <div className="bg-primary/10 p-2 rounded-full group-hover:bg-primary/20 transition-colors">
+                  <Mail className="h-5 w-5 text-primary" />
+                </div>
+                <a href="mailto:karanvir@example.com" className="hover:text-primary transition-colors">
                   karanvir@example.com
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary" />
-                <a href="tel:+1234567890" className="hover:underline">
+              <div className="flex items-center gap-3 group">
+                <div className="bg-primary/10 p-2 rounded-full group-hover:bg-primary/20 transition-colors">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                <a href="tel:+1234567890" className="hover:text-primary transition-colors">
                   +1 (234) 567-890
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <Linkedin className="h-5 w-5 text-primary" />
+              <div className="flex items-center gap-3 group">
+                <div className="bg-primary/10 p-2 rounded-full group-hover:bg-primary/20 transition-colors">
+                  <Linkedin className="h-5 w-5 text-primary" />
+                </div>
                 <a 
                   href="https://linkedin.com/in/karanvir" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="hover:text-primary transition-colors"
                 >
                   linkedin.com/in/karanvir
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <Github className="h-5 w-5 text-primary" />
+              <div className="flex items-center gap-3 group">
+                <div className="bg-primary/10 p-2 rounded-full group-hover:bg-primary/20 transition-colors">
+                  <Github className="h-5 w-5 text-primary" />
+                </div>
                 <a 
                   href="https://github.com/karanvir" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="hover:text-primary transition-colors"
                 >
                   github.com/karanvir
                 </a>
@@ -73,7 +89,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <div>
+          <div className="bg-card/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-semibold mb-6">Send Me a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid w-full items-center gap-1.5">
                 <Label htmlFor="name">Name</Label>
@@ -85,6 +102,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  className="border-primary/20 focus:border-primary"
                 />
               </div>
               <div className="grid w-full items-center gap-1.5">
@@ -97,6 +115,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  className="border-primary/20 focus:border-primary"
                 />
               </div>
               <div className="grid w-full items-center gap-1.5">
@@ -108,10 +127,16 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="min-h-[150px]"
+                  className="min-h-[150px] border-primary/20 focus:border-primary"
                 />
               </div>
-              <Button type="submit" className="w-full">Send Message</Button>
+              <Button 
+                type="submit" 
+                className="w-full relative overflow-hidden group"
+              >
+                <span className="relative z-10">Send Message</span>
+                <span className="absolute inset-0 bg-primary/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+              </Button>
             </form>
           </div>
         </div>
