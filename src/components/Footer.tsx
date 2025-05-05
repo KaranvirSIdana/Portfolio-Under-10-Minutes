@@ -1,19 +1,37 @@
 
 import { Link } from "react-router-dom";
+import { Calculator, Function, SquareRoot } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="py-12 border-t bg-gradient-to-b from-muted/30 to-background">
-      <div className="container max-w-5xl mx-auto px-4">
+    <footer className="py-12 border-t bg-gradient-to-b from-muted/30 to-background relative overflow-hidden">
+      {/* Math symbol background */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-5 left-[10%] text-3xl font-serif">∑</div>
+        <div className="absolute top-10 left-[30%] text-2xl font-serif">∫</div>
+        <div className="absolute top-5 left-[50%] text-4xl font-serif">π</div>
+        <div className="absolute top-10 left-[70%] text-2xl font-serif">√</div>
+        <div className="absolute top-5 left-[90%] text-3xl font-serif">∞</div>
+        <div className="absolute bottom-5 left-[15%] text-3xl font-serif">∝</div>
+        <div className="absolute bottom-10 left-[35%] text-2xl font-serif">∂</div>
+        <div className="absolute bottom-5 left-[55%] text-4xl font-serif">±</div>
+        <div className="absolute bottom-10 left-[75%] text-2xl font-serif">∇</div>
+        <div className="absolute bottom-5 left-[95%] text-3xl font-serif">λ</div>
+      </div>
+      
+      <div className="container max-w-5xl mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="flex items-center gap-2 mb-4">
-              <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center">
-                <span className="font-bold text-primary">K</span>
+              <div className="p-2 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <Calculator className="h-6 w-6 text-primary" />
               </div>
-              <span className="font-bold text-lg">Karanvir</span>
+              <span className="font-bold text-lg flex items-baseline">
+                Karanvir
+                <span className="text-xs text-primary ml-1 font-serif animate-float">∇</span>
+              </span>
             </div>
             <p className="text-sm text-muted-foreground">
               © {currentYear} Karanvir. All rights reserved.
@@ -21,10 +39,22 @@ const Footer = () => {
           </div>
           <div className="space-y-6">
             <nav className="flex flex-wrap justify-center gap-x-6 gap-y-3">
-              <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Home</Link>
-              <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">About</Link>
-              <Link to="/projects" className="text-sm text-muted-foreground hover:text-primary transition-colors">Projects</Link>
-              <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
+              <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
+                <Function className="h-3 w-3 mr-1" />
+                Home
+              </Link>
+              <Link to="#experience" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
+                <SquareRoot className="h-3 w-3 mr-1" />
+                Experience
+              </Link>
+              <Link to="#projects" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
+                <Function className="h-3 w-3 mr-1" />
+                Projects
+              </Link>
+              <Link to="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
+                <Calculator className="h-3 w-3 mr-1" />
+                Contact
+              </Link>
             </nav>
             <div className="flex justify-center space-x-6">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
