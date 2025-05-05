@@ -2,6 +2,9 @@
 
 ## Project info
 
+Created this math themed portfolio using lovable under 10 minutes. (I am as blown as your after reading 10 mins)
+
+Though there are few errors here and there, but damn this is super cool. 
 **URL**: https://lovable.dev/projects/5bf00a71-2de2-4795-9cab-211c9b668cb7
 
 ## How can I edit this code?
