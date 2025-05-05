@@ -106,7 +106,7 @@ const Contact = () => {
                   <Linkedin className="h-5 w-5 text-primary" />
                 </div>
                 <a 
-                  href="https://linkedin.com/in/karanvir" 
+                  href="https://www.linkedin.com/in/karanvir-sidana0308/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -119,7 +119,7 @@ const Contact = () => {
                   <Github className="h-5 w-5 text-primary" />
                 </div>
                 <a 
-                  href="https://www.linkedin.com/in/karanvir-sidana0308/" 
+                  href="https://github.com/KaranvirSIdana/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
