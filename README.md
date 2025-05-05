@@ -1,8 +1,6 @@
-# Welcome to your Lovable project
-
 ## Project info
 
-Created this math themed portfolio using lovable under 10 minutes. (I am as blown as your after reading 10 mins)
+Created this math themed portfolio using **lovable** under 10 minutes. (I am as blown as your after reading 10 mins)
 
 Though there are few errors here and there, but damn this is super cool. 
 
