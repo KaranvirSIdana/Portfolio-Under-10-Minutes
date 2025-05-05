@@ -8,7 +8,7 @@ import {
   CardTitle 
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { GithubIcon, Function, Triangle } from "lucide-react";
+import { GithubIcon, FileFunction, Triangle } from "lucide-react";
 import { useState } from "react";
 
 const Projects = () => {
@@ -46,7 +46,7 @@ const Projects = () => {
       <div className="container max-w-5xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-4">
           <div className="bg-primary/10 p-3 rounded-full">
-            <Function className="h-7 w-7 text-primary" />
+            <FileFunction className="h-7 w-7 text-primary" />
           </div>
           <h2 className="text-3xl font-bold">Projects</h2>
         </div>

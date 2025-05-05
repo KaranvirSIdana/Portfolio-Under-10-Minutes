@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, ResponsiveContainer, XAxis, YAxis, Tooltip } from "recharts";
-import { Calculator, SquareRoot, Function } from "lucide-react";
+import { Calculator, SquareDot, FileFunction } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const DataViz = () => {
@@ -43,7 +43,7 @@ const DataViz = () => {
       <div className="container max-w-5xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-8">
           <div className="bg-primary/10 p-3 rounded-full">
-            <SquareRoot className="h-7 w-7 text-primary" />
+            <SquareDot className="h-7 w-7 text-primary" />
           </div>
           <h2 className="text-3xl font-bold">The Math Behind the Data</h2>
         </div>
@@ -83,7 +83,7 @@ const DataViz = () => {
           <Card className="hover-card backdrop-blur-sm bg-gradient-to-br from-emerald-500/10 to-green-500/10 border-none">
             <CardContent className="p-6 h-[300px]">
               <div className="flex items-center gap-2 mb-4">
-                <Function className="h-5 w-5 text-primary" />
+                <FileFunction className="h-5 w-5 text-primary" />
                 <h3 className="text-lg font-medium">Model Performance</h3>
               </div>
               <ResponsiveContainer width="100%" height="85%">
@@ -107,7 +107,7 @@ const DataViz = () => {
           <Card className="hover-card backdrop-blur-sm bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-none">
             <CardContent className="p-6 h-[300px]">
               <div className="flex items-center gap-2 mb-4">
-                <SquareRoot className="h-5 w-5 text-primary" />
+                <SquareDot className="h-5 w-5 text-primary" />
                 <h3 className="text-lg font-medium">Expertise Distribution</h3>
               </div>
               <ResponsiveContainer width="100%" height="85%">

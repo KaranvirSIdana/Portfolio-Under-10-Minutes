@@ -1,5 +1,5 @@
 
-import { ArrowDown, Function, SquareRoot } from "lucide-react";
+import { ArrowDown, Calculator, FileFunction } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
@@ -75,12 +75,12 @@ const Hero = () => {
             <div className="text-lg md:text-xl leading-relaxed text-center md:text-left">
               Transforming complex data into <span className="font-semibold text-foreground">actionable insights</span> with 
               <span className="inline-flex items-center mx-1 text-primary">
-                <Function className="h-4 w-4 mr-1" /> 
+                <FileFunction className="h-4 w-4 mr-1" /> 
                 mathematical precision
               </span>
               and
               <span className="inline-flex items-center mx-1 text-primary">
-                <SquareRoot className="h-4 w-4 mr-1" />
+                <Calculator className="h-4 w-4 mr-1" />
                 statistical rigor
               </span>
             </div>
